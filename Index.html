@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      media=" screen and (max-width:768px)"
+      href="/css/mobile.css"
+    />
+    <!-- unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="/Imgs/icons/Vector.png" />
+
+    <!-- script tag -->
+    <script defer src="/JS/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const searchButton = document.getElementById('searchButton');
+        const destinationSelect = document.getElementById('destinationSelect');
+      
+        searchButton.addEventListener('click', function() {
+          const selectedValue = destinationSelect.value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          } else {
+            alert('Please select a destination');
+          }
+        });
+      });
+      </script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Title -->
+    <title>Travel at ease</title>
+  </head>
+  <body>
+    <!-- Showcase -->
+    <main class="main" id="home">
+      <!-- Header -->
+      <header class="header">
+        <!-- logo -->
+        <div class="logo">
+          <a href="Index.html">
+          <img src="imgs/Logo/logo2.png" alt="Placeholder Image"
+          alt=""
+          width="100"
+          height="100"/></a>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navlists">
+            <li class="navlist"><a href="#home">Home</a></li>
+            <li class="navlist"><a href="#restaurants">Hotels</a></li>
+            <li class="navlist"><a href="#restaurants">Restaurants</a></li>
+            <li class="navlist"><a href="#destinations">Destinations</a></li>
+            <li class="navlist"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- user || navigator -->
+        <div class="user-profile">
+          <div class="profile-name">
+            <h2>
+              <span class="hello"> Hello, </span>
+              <span class="indiviual-name"> Mohan P M </span>
+            </h2>
+          </div>
+
+          <div class="profile-pic">
+            <a href="Imgs/Logo/passport 2.jpg">
+            <img src="Imgs/Logo/passport 2.jpg" alt="">
+          </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- showcase-content -->
+      <div class="showcase-content">
+        <h1>Travel with your Virtual Guide</h1>
+        <a href="https://earth.google.com/web/" target="_blank" class="showcase-button">
+          <img src="/Imgs/icons/globe.png" alt="" /> Your Destination</a
+        >
+      </div>
+
+      <!-- showcase-search -->
+      Updated Location Search HTML
+
+      <section id="location-search">
+        <div class="container">
+          <div class="form-wrapper">
+            <form action="#" id="searchForm">
+              <select class="form-control" id="destinationSelect">
+                <option value="">Destination</option>
+                <option value="goa.html">Goa</option>
+                <option value="gokarna.html">Gokarna</option>
+                <option value="pondi.html">Pondicherry</option>
+                <option value="udupi.html">Udupi</option>
+                <option value="waynad.html">Waynad</option>
+              </select>
+              <button type="button" class="primary-btn" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- popular Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <!-- title -->
+        <h2 class="section-title">Popular Destinations</h2>
+        <!-- cards -->
+
+        <div class="swiper swiper1">
+          <div class="destinations-cards swiper-wrapper">
+            <!-- card 1 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/goa.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Goa</h5>
+              <h6>India</h6>
+            </div>
+            <!-- card 2 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/gokarna.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Gokarna</h5>
+              <h6>Karnataka, India</h6>
+            </div>
+            <!-- card 3 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/pondi.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Pondicherry</h5>
+              <h6>India</h6>
+            </div>
+            <!-- card 4 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/udupi.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Udupi</h5>
+              <h6>Karnataka, India</h6>
+            </div>
+            <!-- card 5 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/waynad.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Waynad</h5>
+              <h6>Kerala, India</h6>
+            </div>
+            <!-- card 6 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://static.toiimg.com/photo/msid-85515152,width-96,height-65.cms"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Munnar</h5>
+              <h6>Kerala, India</h6>
+            </div>
+            <!-- card 7 -->
+           
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Hotels And Restaurants</h2>
+          <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+        <!-- cards -->
+        <div class="hotel-card">
+          
+          <!-- card 1 -->
+          <div class="hotel-cards">
+            <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=20070110130312711&_uCurrency=INR&checkin=08272024&checkout=08282024&city=CTGOI&country=IN&lat=15.56782&lng=73.76085&locusId=CTGOI&locusType=city&rank=9&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Goa&viewType=BUDGET&mtkeys=5708847309087393159" class="image-link">
+              <img src="https://r1imghtlak.mmtcdn.com/94800ab88e0411e98c770242ac110004.jpg?&output-quality=75&downsize=520:350&crop=520:350;38,0&output-format=jpg&downsize=480:336&crop=480:336" alt="Placeholder Image"
+              alt=""
+              width="320"
+              height="380">
+            </a>
+            <h5>Resorte Marinha Dourada</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Goa, India</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 2 -->
+          <div class="hotel-cards">
+            <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202002111705366938&_uCurrency=INR&checkin=08272024&checkout=08282024&city=CTXGO&country=IN&lat=14.54239&lng=74.33103&locusId=CTXGO&locusType=city&rank=23&reference=hotel&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Gokarna&type=city&mtkeys=2528571636471017136">
+            <img src="https://r1imghtlak.mmtcdn.com/0b34acfee3fd11ebbd760242ac110004.jpg" alt="" width="320" height="380">
+          </a>
+            <h5>Sanskruti Resort Gokarna</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Gokarna, Karnataka</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+          </div>
+          <!-- card 3 -->
+          <div class="hotel-cards">
+            <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201512291500526587&_uCurrency=INR&checkin=08272024&checkout=08282024&city=CTXUP&country=IN&lat=13.35922&lng=74.78515&locusId=CTXUP&locusType=city&rank=25&reference=hotel&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Udupi&type=city&mtkeys=-6959774928429825780">
+            <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201512291500526587-6b12a5f073a111e9922e0242ac110007.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,13&output-format=jpg&downsize=480:336&crop=480:336" alt="" width="320" height="380">
+          </a>
+            <h5>Country Inn and Suites By Radisson</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Udupi, Karnataka</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=2.png" alt=""></div>
+          </div>
+          <!-- card 4 -->
+          <div class="hotel-cards">
+            <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200807071403537820&_uCurrency=INR&checkin=08272024&checkout=08282024&city=CTXPC&country=IN&lat=11.92818&lng=79.83212&locusId=CTXPC&locusType=city&rank=5&reference=hotel&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Pondicherry&type=city&mtkeys=-4051044197539869347">
+            <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200807071403537820-23cfcc2c1eb111ed9d110a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,48&output-format=jpg&downsize=480:336&crop=480:336" alt="" width="320" height="380">
+          </a>
+            <h5>The Richmond</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Pondicherry, India</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 5 -->
+            <!-- card 3 -->
+            <div class="hotel-cards">
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201802131411002343&checkin=08082024&checkout=08092024&country=IN&city=CTGOI&openDetail=true&currency=INR&roomStayQualifier=2e0e&locusId=CTGOI&locusType=city&region=in&funnelName=HOTELS&rsc=1e2e&source_caller=sdk&af_siteid=530488359&shortlink=6k0m0klg&af_referrer_uid=1697048630855-1245483&c=hotel_detail&pid=share_app&deep_link_value=https%3A%2F%2Fwww.makemytrip.com%2Fhotels%2Fhotel-details%3FhotelId%3D201802131411002343%26checkin%3D08082024%26checkout%3D08092024%26country%3DIN%26city%3DCTGOI%26openDetail%3Dtrue%26currency%3DINR%26roomStayQualifier%3D2e0e%26locusId%3DCTGOI%26locusType%3Dcity%26region%3Din%26funnelName%3DHOTELS%26rsc%3D1e2e&af_referrer_customer_id=5719D176-489C-4684-B4DB-1BBA1DFAF1C6">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOegJaOf0HR63Q7ECb58NfyTNQTEO-74BJewX9C=s1360-w1360-h1020" alt="" width="280" height="340">
+              </a>
+                <h5>Sunshine Resort Goa</h5>
+                <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Goa, India</h6>
+                <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+              </div>
+            <!-- card 4 -->
+            <div class="hotel-cards">
+              <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202312221020535437&checkin=08082024&checkout=08092024&country=IN&city=CTGOI&openDetail=true&currency=INR&roomStayQualifier=2e0e&locusId=CTGOI&locusType=city&region=in&viewType=LUXE&funnelName=HOTELS&rsc=1e2e&source_caller=sdk&af_siteid=530488359&shortlink=r6z970za&af_referrer_uid=1697048630855-1245483&c=hotel_detail&pid=share_app&deep_link_value=https%3A%2F%2Fwww.makemytrip.com%2Fhotels%2Fhotel-details%3FhotelId%3D202312221020535437%26checkin%3D08082024%26checkout%3D08092024%26country%3DIN%26city%3DCTGOI%26openDetail%3Dtrue%26currency%3DINR%26roomStayQualifier%3D2e0e%26locusId%3DCTGOI%26locusType%3Dcity%26region%3Din%26viewType%3DLUXE%26funnelName%3DHOTELS%26rsc%3D1e2e&af_referrer_customer_id=5719D176-489C-4684-B4DB-1BBA1DFAF1C6">
+              <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202312221020535437-e81855aa-6a1a-4721-8fd5-ec303bf4608b.jpg" alt="" width="280" height="340">
+            </a>
+              <h5>Ronil Goa - A JdV by Hyatt Hotel</h5>
+              <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Goa, India</h6>
+              <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+            </div>
+     
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours/Travel -->
+    <section id="tours">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Travel Tips and Advice</h2>
+          <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+        <div class="tours-cards">
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <img src="Imgs/myimg.JPG" alt="" width="320" height="380">
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Pack your bags before you get old
+
+                </h3>
+                <p>seize the opportunities to travel and explore the world while you're still young and able. Don't wait for the perfect moment or let responsibilities hold you back; embrace adventures and make memories now, before age and obligations make it more challenging</p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt=""> Avenger Initiative</h6>
+                <h6><img src="/Imgs/icons/message.png" alt=""> 2</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5e613ba3316e84013e1ad68c/1601821320691-KCWRLY8GYK5OD2T3IHPA/travel_challenge_book_europe_travel_memories.jpg" alt="" width="320" height="380">
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Live with memories</h3>
+                <p> It encourages embracing life's adventures, cherishing relationships, and making choices that lead to meaningful and unforgettable experiences. By living this way, you create a tapestry of memories that bring joy, fulfillment, and a sense of accomplishment throughout your life.</p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt=""> Ager Pagla</h6>
+                <h6><img src="/Imgs/icons/message.png" alt="">12</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- activities -->
+    <section id="activities">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Activities</h2>
+          <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+
+        <!-- Activities Cards -->
+        <div class="activities-cards">
+          <div class="activities-card">
+            <img src="https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1701839565/bbj/dnlfv8lgsklekn96xxyv.jpg" alt="" width="320" height="380">
+            <h4>Parasailing</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/12/things-wayanad1.jpg" alt="" width="320" height="380">
+            <h4>Zipline</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://res.klook.com/image/upload/c_fill,w_750,h_560/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/kwtytuw7pjigqsuewrec.jpg" alt="" width="320" height="380">
+            <h4>Scuba Diving</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/22/b3/f1.jpg" alt="" width="320" height="380">
+            <h4>Bunge Jumping</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="About">
+      <div class="about-content">
+        <h2>About This Website</h2>
+        <p>
+          This is a complete tourist fully integrated tourism web site. The website covers all the areas required for an including tourism, This project is developed to managethe tourist in the tourism management web site. The main module in this project are login,tourist management, complaints and reports.
+        </p>
+
+         <div class="section-button hotel-button">Read More <img src="/Imgs/icons/bleft.png" alt=""></div>
+      </div>
+
+      <div class="about-img">
+        <img src="https://wallpapers.com/images/hd/travel-4k-volcano-ynlmn2hmts0n7gsw.jpg" alt="" width="556" height="488">
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-sections">
+          <div class="footer-section">
+            <img src="/Imgs/Logo/logo2.png" alt="placeholder"
+            width="80"
+            height="80">
+            <p>This website is specially built to make the users happy by giving them the entire plan of their trip and help saving their time</p>
+            <div class="footer-social-icons">
+              <img src="/Imgs/icons/facebook.png" alt="">
+              <img src="/Imgs/icons/twitter.png" alt="">
+              <img src="/Imgs/icons/instagram.png" alt="">
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Menu</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="">why Travel With Ease</a></li>
+              <li><a href="">Partner with us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="">Account</a></li>
+              <li><a href="">Support Center</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Subscribe on our destination review <br> newsletters</h3>
+            <form>
+              <div class="form-section">
+                <img src="/Imgs/icons/messagefooter.png" alt="">
+                <label for="email">  Your Email
+                  <input type="email" id="email" name="email" placeholder="mohanpm1221@gmail.com ">
+                </label>
+              </div>
+              <button type="submit"><img src="/Imgs/icons/arrowleft.png" alt=""></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+     
+    <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+    <div class="toggleClose"><i class="uil uil-multiply"></i></div>
+  </body>
+</html>

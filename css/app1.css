@@ -1,0 +1,80 @@
+/* Apply background color to the whole page */
+body {
+    background: linear-gradient(90deg, #333, #444); /* Gradient background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: rgb(14, 13, 13); /* Default text color */
+    font-family: Arial, sans-serif; /* Optional: set a font */
+}
+
+/* General styles for the navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the navbar */
+    width: 100%; /* Occupy full width of the viewport */
+    height: 100%; /* Occupy full height of the viewport */
+    padding: 300px;
+    box-shadow: 0 4px 8px rgba(214, 206, 206, 0.3); /* Add shadow for depth */
+    border-radius: 10px;
+    border-color: #33FF57; /* Rounded corners for the navbar */
+    text-align: center; /* Center the text inside the navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Center the items horizontally */
+}
+
+/* Style for the list within the navbar */
+.navlists {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Style for each list item */
+.navlist {
+    margin: 10px 0; /* Spacing between each list item */
+}
+
+/* Style for the links */
+.navlist a {
+    display: block; /* Make the links block elements */
+    color: white; /* Text color */
+    background: linear-gradient(90deg, #555, #666); /* Gradient background */
+    padding: 15px 20px; /* Padding around the text */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect and scale */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Hover effect for the links */
+.navlist a:hover {
+    background: linear-gradient(90deg, #777, #888); /* Change background gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Different colors for each link */
+.navlist:nth-child(1) a {
+    background: gray; /* Gradient red */
+}
+
+.navlist:nth-child(2) a {
+    background: gray; /* Gradient green */
+}
+
+.navlist:nth-child(3) a {
+    background: gray; /* Gradient blue */
+}
+
+.navlist:nth-child(4) a {
+    background: gray; /* Gradient yellow */
+}
+
+.navlist:nth-child(5) a {
+    background: gray; /* Gradient purple */
+}
